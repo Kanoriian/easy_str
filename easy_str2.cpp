@@ -1,5 +1,4 @@
-#include<iostream>
-#include<string>
+#include<easy_str_h>
 
 using namespace std;
 
