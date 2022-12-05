@@ -11,7 +11,6 @@ string zaim(string nn) {
 }
 
 string itc_hello_str(string name) { //1+
-    cin >> name;
     string a = "Hello, ";
     a = a + name;
     return a;
