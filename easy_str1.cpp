@@ -1,4 +1,4 @@
-#include"easy_str_h.h"
+#include<str_easy.h>
 
 using namespace std;
 
