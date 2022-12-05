@@ -4,6 +4,8 @@
 #include<iostream>
 #include<string>
 
+using namespace std;
+
 string zaim(string nn);
 
 string itc_hello_str(string name);
