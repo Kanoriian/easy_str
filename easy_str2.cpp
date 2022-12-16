@@ -6,7 +6,7 @@ int itc_count_char_in_str(char ch, string str){ //5+
     char cent;
     long long geniq;
     geniq = 0;
-    while(str > ""){
+    while(str > "\0"){
         cent = str[0];
         str = zaim(str);
         str = popback(str);
