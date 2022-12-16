@@ -37,10 +37,7 @@ void itc_first_end_three(string str) { //4+
     long long a;
     string soska = str;
     char cent;
-    while (str > "") {
-        str = popback(str);
-        a++;
-    }
+    a = itc_len(str);
     if (a <= 5) {
         cent = soska[0];
         while (a > 0) {
