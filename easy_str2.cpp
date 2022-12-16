@@ -4,13 +4,13 @@ using namespace std;
 
 int itc_count_char_in_str(char ch, string str){ //5+
     char cent;
-    long long geniq;
+    long long geniq, sdr, a;
     geniq = 0;
-    while(str > "\0"){
-        cent = str[0];
-        str = zaim(str);
-        str = popback(str);
-        str = zaim(str);
+    sdr = itc_len(str);
+    a = 0;
+    while(a <= sdr){
+        cent = str[a];
+        a++;
         if(cent == ch){
             geniq++;
         }else
