@@ -17,17 +17,13 @@ string itc_hello_str(string name) { //1+
 }
 
 long long itc_len(string str) { //2+
-    char cent;
     long long iiiiigor = 0;
-    while (str != "") {
-        str = zaim(str);
-        cent = str[0];
-        str = zaim(str);
-        str.pop_back();
+    while (str[iiiiigor] != '\0') {
         iiiiigor++;
     }
     return iiiiigor;
 }
+
 
 void itc_print_copy_str(string str, int number) { //3+
     while (number > 0) {
