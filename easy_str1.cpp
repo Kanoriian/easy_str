@@ -38,7 +38,7 @@ void itc_first_end_three(string str) { //4+
     string soska = str;
     char cent;
     while (str > "") {
-        str.pop_back();
+        str = popback(str);
         a++;
     }
     if (a <= 5) {
