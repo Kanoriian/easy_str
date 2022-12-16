@@ -26,6 +26,7 @@ string itc_reverse_str(string str);
 
 string itc_slice_str(string str, int start, int end);
 
+string popback(string str);
 
 
 
