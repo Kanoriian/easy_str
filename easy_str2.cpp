@@ -22,11 +22,12 @@ int itc_count_char_in_str(char ch, string str){ //5+
 string itc_even_place(string str){ //6+
     char cent;
     string Qineg;
-    while(str > ""){
-        cent = str[0];
-        str = zaim(str);
-        str = popback(str);
-        str = zaim(str);
+    long long sdr, a;
+    sdr = itc_len(str);
+    a = 0;
+    while(sdr >= a){
+        cent = str[a];
+        a++;
         if(cent == '0' || cent == '1' || cent == '2' || cent == '3' || cent == '4' || cent == '5' || cent == '6' || cent == '7' || cent == '8' || cent == '9'){
             Qineg+= cent;
         }
