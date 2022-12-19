@@ -43,11 +43,11 @@ double itc_percent_lower_uppercase(string str){ //7+
     char cent;
     double sera = 0;
     double sira = 0;
-    while(str > ""){
-        cent = str[0];
-        str = zaim(str);
-        str = popback(str);
-        str = zaim(str);
+    long long a = 0;
+    long long sdr = itc_len(str);
+    while(sdr > a){
+        cent = str[a];
+        a++;
         if(cent == 'a' || cent == 'b' || cent == 'c' || cent == 'd' || cent == 'e' || cent == 'f' || cent == 'g' || cent == 'h' || cent == 'i' || cent == 'j' || cent == 'k' || cent == 'l' || cent == 'm' || cent == 'n' || cent == 'o' || cent == 'p' || cent == 'q' || cent == 'r' || cent == 's' || cent == 't' || cent == 'u' || cent == 'v' || cent == 'w' || cent == 'x' || cent == 'y' || cent == 'z'){
             sira++;
         }else
