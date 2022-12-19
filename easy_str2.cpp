@@ -36,7 +36,7 @@ string itc_even_place(string str){ //6+
         cout << -1;
         return 0;
     }
-    cout << Qineg;
+    return Qineg;
 }
 
 double itc_percent_lower_uppercase(string str){ //7+
@@ -72,8 +72,7 @@ string itc_slice_str(string str, int start, int end){ //9
     long long sas = itc_len(str);
     if(sas < start){
         str+= "\0";
-        cout << str;
-        return 0;
+        return str;
     }else
     if(end > sas){
         while(start > 0){
@@ -83,8 +82,7 @@ string itc_slice_str(string str, int start, int end){ //9
             start--;
         }
         str+= "\0";
-        cout << str;
-        return 0;
+        return str;
     }else
     if(sas > end){
         while(start > 0){
@@ -103,6 +101,6 @@ string itc_slice_str(string str, int start, int end){ //9
         }
         str = zaim(str);
         str+= "\0";
-        cout << str;
+        return str;
     }
 }
