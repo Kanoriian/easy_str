@@ -21,7 +21,7 @@ int itc_count_char_in_str(char ch, string str){ //5+
 
 string itc_even_place(string str){ //6+
     char cent;
-    string Qineg;
+    string Qineg = '\0';
     long long sdr, a;
     sdr = itc_len(str);
     a = 0;
@@ -32,9 +32,8 @@ string itc_even_place(string str){ //6+
             Qineg+= cent;
         }
     }
-    if(Qineg == ""){
-        cout << -1;
-        return 0;
+    if(Qineg == "\0"){
+        return -1;
     }
     return Qineg;
 }
