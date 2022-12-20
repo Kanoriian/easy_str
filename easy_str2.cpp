@@ -63,8 +63,7 @@ double itc_percent_lower_uppercase(string str){ //7+
 
 string itc_reverse_str(string str){ //8+
     str = zaim(str);
-    cout << str;
-    return 0;
+    return str;
 }
 
 string itc_slice_str(string str, int start, int end){ //9
