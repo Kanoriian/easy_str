@@ -24,7 +24,11 @@ string itc_even_place(string str){ //6+
     string Qineg = "\0";
     long long sdr, a;
     sdr = itc_len(str);
-    a = 0;
+    a = 1;
+    if(sdr <= 1){
+        string ssd = "-1";
+        return ssd;
+    }
     while(sdr > a){
         cent = str[a];
         a++;
