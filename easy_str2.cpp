@@ -68,7 +68,7 @@ string itc_reverse_str(string str){ //8+
 
 string itc_slice_str(string str, int start, int end){ //9
     end++;
-    string oleg;
+    string oleg = "";
     char cent;
     long long a;
     long long sas = itc_len(str);
@@ -91,4 +91,5 @@ string itc_slice_str(string str, int start, int end){ //9
         }
         return oleg;
     }
+    return oleg;
 }
