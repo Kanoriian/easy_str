@@ -91,6 +91,5 @@ string itc_slice_str(string str, int start, int end){ //9
         }
         return oleg;
     }
-
-    return oleg;
+    return str;
 }
