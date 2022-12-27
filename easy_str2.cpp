@@ -67,6 +67,7 @@ string itc_reverse_str(string str){ //8+
 }
 
 string itc_slice_str(string str, int start, int end){ //9
+    end++;
     long long a;
     long long sas = itc_len(str);
     if(sas < start){
