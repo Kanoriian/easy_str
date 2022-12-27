@@ -32,5 +32,7 @@ bool itc_equal_reverse(string str); // 10
 
 string itc_cmp_str(string str1, string str2, int num); // 11
 
+long long itc_find_str (string s1, string s2); // 12
+
 
 #endif // EASY_STR_H_H_INCLUDED
