@@ -8,3 +8,11 @@ string popback(string str){
     str[a] = '\0';
     return str;
 }
+
+bool itc_equal_reverse(string str){ // 10
+    string sdr = zaim(str);
+    if(sdr == str){
+        return true;
+    }else
+        return false;
+}
