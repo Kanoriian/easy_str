@@ -8,26 +8,27 @@ using namespace std;
 
 string zaim(string nn);
 
-string itc_hello_str(string name);
+string itc_hello_str(string name); // 1
 
-long long itc_len(string str);
+long long itc_len(string str); // 2
 
-void itc_print_copy_str(string str, int number);
+void itc_print_copy_str(string str, int number); // 3
 
-void itc_first_end_three(string str);
+void itc_first_end_three(string str); // 4
 
-int itc_count_char_in_str(char ch, string str);
+int itc_count_char_in_str(char ch, string str); // 5
 
-string itc_even_place(string str);
+string itc_even_place(string str); // 6
 
-double itc_percent_lower_uppercase(string str);
+double itc_percent_lower_uppercase(string str); // 7
 
-string itc_reverse_str(string str);
+string itc_reverse_str(string str); // 8
 
-string itc_slice_str(string str, int start, int end);
+string itc_slice_str(string str, int start, int end); //9
 
 string popback(string str);
 
+bool itc_equal_reverse(string str); // 10
 
 
 #endif // EASY_STR_H_H_INCLUDED
