@@ -65,6 +65,7 @@ string itc_reverse_str(string str){ //8+
     str = zaim(str);
     return str;
 }
+
 string itc_slice_str(string str, int start, int end){ //9
     end++;
     string oleg;
@@ -72,7 +73,7 @@ string itc_slice_str(string str, int start, int end){ //9
     long long a;
     long long sas = itc_len(str);
     if(sas < start){
-        str+= "\0";
+        str+= '\0';
         return str;
     }else
     if(end > sas){
@@ -81,7 +82,7 @@ string itc_slice_str(string str, int start, int end){ //9
             oleg += cent;
             start++;
         }
-        oleg+= "\0";
+        oleg+= '\0';
         return oleg;
     }else
     if(sas > end){
