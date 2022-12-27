@@ -65,9 +65,10 @@ string itc_reverse_str(string str){ //8+
     str = zaim(str);
     return str;
 }
-
 string itc_slice_str(string str, int start, int end){ //9
     end++;
+    string oleg;
+    char cent;
     long long a;
     long long sas = itc_len(str);
     if(sas < start){
@@ -75,32 +76,21 @@ string itc_slice_str(string str, int start, int end){ //9
         return str;
     }else
     if(end > sas){
-        while(start > 0){
-            str = zaim(str);
-            str = popback(str);
-            str = zaim(str);
-            start--;
+        while(start < sas){
+            cent = str[start];
+            oleg += cent;
+            start++;
         }
-        str+= "\0";
-        return str;
+        oleg+= "\0";
+        return oleg;
     }else
     if(sas > end){
-        while(start > 0){
-            str = zaim(str);
-            str = popback(str);
-            str = zaim(str);
-            start--;
+        while(start < end){
+            cent = str[start];
+            oleg += cent;
+            start++;
         }
-        sas = sas - end;
-        str = zaim(str);
-        while(sas > 0){
-            str = zaim(str);
-            str.pop_back();
-            str = zaim(str);
-            sas--;
-        }
-        str = zaim(str);
-        str+= "\0";
-        return str;
+        oleg+= '\0';
+        return oleg;
     }
 }
