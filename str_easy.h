@@ -30,5 +30,7 @@ string popback(string str);
 
 bool itc_equal_reverse(string str); // 10
 
+string itc_cmp_str(string str1, string str2, int num); // 11
+
 
 #endif // EASY_STR_H_H_INCLUDED
