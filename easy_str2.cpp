@@ -67,7 +67,9 @@ string itc_reverse_str(string str){ //8+
 }
 
 string itc_slice_str(string str, int start, int end){ //9
+    long long a;
     long long sas = itc_len(str);
+    cout << sas;
     if(sas < start){
         str+= "\0";
         return str;
@@ -89,11 +91,13 @@ string itc_slice_str(string str, int start, int end){ //9
             str = zaim(str);
             start--;
         }
+        cout << str << endl;
+        sas = sas - end;
+        cout << sas << endl;
         str = zaim(str);
-        sas-= end;
         while(sas > 0){
             str = zaim(str);
-            str = popback(str);
+            str.pop_back();
             str = zaim(str);
             sas--;
         }
