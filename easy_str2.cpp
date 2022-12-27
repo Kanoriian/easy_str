@@ -75,7 +75,7 @@ string itc_slice_str(string str, int start, int end){ //9
     if(sas < start){
         return str;
     }else
-    if(end > sas){
+    if(end > sas || end == start){
         while(start < sas){
             cent = str[start];
             oleg += cent;
@@ -91,5 +91,6 @@ string itc_slice_str(string str, int start, int end){ //9
         }
         return oleg;
     }
+
     return oleg;
 }
