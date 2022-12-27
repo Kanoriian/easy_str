@@ -17,12 +17,8 @@ bool itc_equal_reverse(string str){ // 10
         return false;
 }
 
-string itc_cmp_str(string str1, string str2, int num){ // 11, я знаю что она не работает
-    string cute, cutten, cuteneli;
-    string cutenewworld = "э";
-    cute = "";
-    cutten = "";
-    cuteneli = "";
+string itc_cmp_str(string str1, string str2, int num){ // 11
+    string cute = "";
     long long a = 0;
     char cent;
     long long sas = itc_len(str1);
@@ -37,28 +33,24 @@ string itc_cmp_str(string str1, string str2, int num){ // 11, я знаю что она не 
         cent = str1[a];
         cute += cent;
         a++;
-        cout << cute << endl;
     }
+
     long long pivo = a;
+    a = 0;
     while(a < jojo){
         cent = str2[a];
-        cutten += cent;
+        cute += cent;
         a++;
-        cout << cutten << endl;
     }
 
     if(num == sas)
-        cutenewworld = cute + cutten + cuteneli;
-        cout << cutenewworld;
-        return cutenewworld;
+        return cute;
 
     while(pivo < sas){
         cent = str1[pivo];
-        cuteneli += cent;
+        cute += cent;
         pivo++;
-        cout << cuteneli << endl;
     }
-    cout << cutenewworld;
-    cutenewworld = cute + cutten + cuteneli;
-    return cutenewworld;
+    return cute;
 }
+
