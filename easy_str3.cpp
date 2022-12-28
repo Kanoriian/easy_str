@@ -9,7 +9,7 @@ string popback(string str){
     return str;
 }
 
-bool itc_equal_reverse(string str){ // 10
+bool itc_equal_reverse(string str){ // 10+
     string sdr = zaim(str);
     if(sdr == str){
         return true;
@@ -20,42 +20,38 @@ bool itc_equal_reverse(string str){ // 10
 string itc_cmp_str(string str1, string str2, int num){ // 11
     string cute = "";
     long long a = 0;
-    char cent;
     long long Petya;
     long long efim = 0;;
     long long nikita = itc_len(str1);
     long long jojo = itc_len(str2);
 
-    if(str2 == "")
+    if(str2 == "") // zed 1
         return str1;
-    if(num >= nikita)
+    if(num >= nikita){  // zed 2
         Petya = num - jojo;
-        for(efim; efim < Petya; efim++){
+        for(efim; efim < Petya; efim++){ // 1a
             cute += str1[efim];
         }
-        for(Petya; Petya < num; Petya++){
+        for(Petya; Petya < num; Petya++){ // 2a
             cute += str1[Petya];
         }
         return cute;
-    cout << "AAA";
-    for(a = 0; a < num; a++){
+    }
+
+    for(a = 0; a < num; a++){ // 1b
         cute += str1[a];
     }
     long long pivo = a;
-    efim = nikita - jojo - a;
-    a = 0;
-
-    for(a = 0; a < jojo && a < efim; a++){
+    efim = nikita - jojo;
+    nikita -= num;
+    for(a = 0; a < jojo && a < efim || a < nikita; a++){ // 2b
         cute += str2[a];
     }
 
-    if(num == nikita)
-        return cute;
-
-
-    for(pivo; pivo < nikita && pivo < efim; pivo++){
+    for(pivo; pivo < nikita && pivo < efim; pivo++){ // 3b
         cute += str1[pivo];
     }
+
     return cute;
 }
 
