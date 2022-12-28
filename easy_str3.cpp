@@ -16,43 +16,25 @@ bool itc_equal_reverse(string str){ // 10+
     }else
         return false;
 }
-
 string itc_cmp_str(string str1, string str2, int num){ // 11
-    string cute = "";
-    long long a = 0;
-    long long Petya;
-    long long efim = 0;;
-    long long nikita = itc_len(str1);
-    long long jojo = itc_len(str2);
-
-    if(str2 == "") // zed 1
-        return str1;
-    if(num >= nikita){  // zed 2
-        Petya = num - jojo;
-        for(efim; efim < Petya; efim++){ // 1a
-            cute += str1[efim];
-        }
-        for(Petya; Petya < num; Petya++){ // 2a
-            cute += str1[Petya];
-        }
-        return cute;
+    string dedliparkourkillerdarkbrawlstarsassasinstalkersnaiper1931 = "";
+    string mamariodejanerio;
+    long long sas = itc_len(str1);
+    long long soska = itc_len(str2);
+    long long a;
+    for(a = 0; a < num; a++){
+        dedliparkourkillerdarkbrawlstarsassasinstalkersnaiper1931 += str1[a];
     }
-
-    for(a = 0; a < num; a++){ // 1b
-        cute += str1[a];
+    for(a = 0; a < soska; a++){
+        dedliparkourkillerdarkbrawlstarsassasinstalkersnaiper1931 += str2[a];
     }
-    long long pivo = a;
-    efim = nikita - jojo;
-    nikita -= num;
-    for(a = 0; a < jojo && a < efim || a < nikita; a++){ // 2b
-        cute += str2[a];
+    for(a = num; a < sas; a++){
+        dedliparkourkillerdarkbrawlstarsassasinstalkersnaiper1931 += str1[a];
     }
-
-    for(pivo; pivo < nikita && pivo < efim; pivo++){ // 3b
-        cute += str1[pivo];
+    for(a = 0; a < sas; a++){
+        mamariodejanerio += dedliparkourkillerdarkbrawlstarsassasinstalkersnaiper1931[a];
     }
-
-    return cute;
+    return mamariodejanerio;
 }
 
 long long itc_find_str(string s1, string s2){ // 12
