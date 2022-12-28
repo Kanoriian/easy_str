@@ -67,29 +67,14 @@ string itc_reverse_str(string str){ //8+
 }
 
 string itc_slice_str(string str, int start, int kon){ //9
-    string oleg = "";
-    char cent;
-    long long sas = itc_len(str);
-    if(sas < start){
-        return str;
+    string aboba = "";
+    long long soskafil = itc_len(str);
+    long long a;
+    if(kon > soskafil)
+        kon = soskafil;
+    for(a = start; a < kon; a++){
+        aboba += str[a];
     }
-
-    if(kon > sas){
-        for(start; start <= sas; start++){
-            oleg += str[start];
-        }
-        return oleg;
-    }
-    if(kon == start){
-        for(start; start < sas; start++){
-            oleg += str[start];
-        }
-    }
-    if(sas > kon){
-        for(start; start <= kon; start++){
-            oleg += str[start];
-        }
-        return oleg;
-    }
-    return oleg;
+    aboba += '\0';
+    return aboba;
 }
