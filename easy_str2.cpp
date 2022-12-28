@@ -73,18 +73,23 @@ string itc_slice_str(string str, int start, int kon){ //9
     if(sas < start){
         return str;
     }
-    if(kon > sas || kon == start){
-        for(start = start; start <= sas; start ++){
+
+    if(kon > sas){
+        for(start; start <= sas; start++){
             oleg += str[start];
         }
         return oleg;
     }
+    if(kon == start){
+        for(start; start < sas; start++){
+            oleg += str[start];
+        }
+    }
     if(sas > kon){
-        for(start = start; start <= kon; start++){
+        for(start; start <= kon; start++){
             oleg += str[start];
         }
         return oleg;
     }
     return oleg;
 }
-
