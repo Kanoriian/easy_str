@@ -54,7 +54,7 @@ string itc_cmp_str(string str1, string str2, int num){ // 11
     return cute;
 }
 
-long long itc_find_str (string s1, string s2){ // 12
+long long itc_find_str(string s1, string s2){ // 12
 long long cute, cutenelia;
 string bibaiboba;
 cute = 0;
