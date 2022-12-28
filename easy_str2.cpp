@@ -66,31 +66,25 @@ string itc_reverse_str(string str){ //8+
     return str;
 }
 
-string itc_slice_str(string str, int start, int end){ //9
-    end++;
+string itc_slice_str(string str, int start, int kon){ //9
     string oleg = "";
     char cent;
-    long long a;
     long long sas = itc_len(str);
     if(sas < start){
         return str;
-    }else
-    if(end > sas || end == start){
-        while(start < sas){
-            cent = str[start];
-            oleg += cent;
-            start++;
-        }
-        return oleg;
-    }else
-    if(sas > end){
-        while(start < end){
-            cent = str[start];
-            oleg += cent;
-            start++;
+    }
+    if(kon > sas || kon == start){
+        for(start = start; start <= sas; start ++){
+            oleg += str[start];
         }
         return oleg;
     }
-
+    if(sas > kon){
+        for(start = start; start <= kon; start++){
+            oleg += str[start];
+        }
+        return oleg;
+    }
     return oleg;
 }
+
