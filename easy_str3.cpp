@@ -21,35 +21,40 @@ string itc_cmp_str(string str1, string str2, int num){ // 11
     string cute = "";
     long long a = 0;
     char cent;
-    long long sas = itc_len(str1);
+    long long Petya;
+    long long efim = 0;;
+    long long nikita = itc_len(str1);
     long long jojo = itc_len(str2);
 
     if(str2 == "")
         return str1;
-    if(num > sas)
-        num = sas;
-
-    while(a < num){
-        cent = str1[a];
-        cute += cent;
-        a++;
+    if(num >= nikita)
+        Petya = num - jojo;
+        for(efim; efim < Petya; efim++){
+            cute += str1[efim];
+        }
+        for(Petya; Petya < num; Petya++){
+            cute += str1[Petya];
+        }
+        return cute;
+    cout << "AAA";
+    for(a = 0; a < num; a++){
+        cute += str1[a];
     }
-
     long long pivo = a;
+    efim = nikita - jojo - a;
     a = 0;
-    while(a < jojo){
-        cent = str2[a];
-        cute += cent;
-        a++;
+
+    for(a = 0; a < jojo && a < efim; a++){
+        cute += str2[a];
     }
 
-    if(num == sas)
+    if(num == nikita)
         return cute;
 
-    while(pivo < sas){
-        cent = str1[pivo];
-        cute += cent;
-        pivo++;
+
+    for(pivo; pivo < nikita && pivo < efim; pivo++){
+        cute += str1[pivo];
     }
     return cute;
 }
